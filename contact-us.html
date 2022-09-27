@@ -87,42 +87,30 @@
     <main class="mt-5 container">
         <div class="card">
             <div class="card-body m-3">
-                <h1 class="card-title">Suggestion</h1>
+                <h1 class="card-title">Suggestion / Ask A Question</h1>
 
-                <form novalidate>
+                <!-- form need action -->
+
+                <form novalidate action="https://formspree.io/f/xaykovkd" method="POST"> 
                     <div class="row">
                         <div class="col-sm-12 col-md-5 col-5 mt-2">
-                            <input placeholder="Name" type="text" class="form-input">
+                            <input placeholder="Name" type="text" class="form-input" name="name">
                         </div>
                         <div class="col-sm-12 col-md-5 col-5 mt-2">
-                            <input placeholder="Email" type="email" class="form-input">
+                            <input placeholder="Email" type="email" class="form-input" name="email">
                         </div>
                     </div>
 
                     <div class="mt-5">
-                        <textarea placeholder="Message" cols="30" rows="4" class="form-input"></textarea>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="card mt-5">
-            <div class="card-body m-3">
-                <h1 class="card-title">Ask a question</h1>
-
-                <form novalidate>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-5 col-5 mt-2">
-                            <input placeholder="Name" type="text" class="form-input">
-                        </div>
-                        <div class="col-sm-12 col-md-5 col-5 mt-2">
-                            <input placeholder="Email" type="email" class="form-input">
-                        </div>
+                        <textarea placeholder="Type Your Message Here" cols="30" rows="8" class="form-input .flex-nowrap." style="height:100%" name="message"></textarea>
                     </div>
 
-                    <div class="mt-5">
-                        <textarea placeholder="Message" cols="30" rows="4" class="form-input"></textarea>
+                    <div id="Message message" class="form-text mb-4">
+                        Please raise your suggestions or questions to us through the message text box above. We will get back to you within 3 working days.
                     </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
                 </form>
             </div>
         </div>
